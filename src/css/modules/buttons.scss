@@ -1,0 +1,18 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 180px;
+    padding: 0.75rem;
+    color: $primary;
+    background-color: transparent;
+    border: 1px solid $primary;
+    border-radius: 8px;
+}
+
+.btn-yellow {
+    border-color: $yellow;
+    background-color: inherit;
+    color: yellow;
+}

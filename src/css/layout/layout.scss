@@ -1,0 +1,41 @@
+#app {
+    overflow: hidden;
+}
+
+.container  {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.iland {
+    position: relative;
+    width: 100%;
+    height: max-content;
+}
+
+.iland img {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    overflow-x:hidden;
+}
+
+.iland-left img {
+    left: -10px;
+}
+
+section:nth-child(1) {
+    margin-top: 190px;
+}
+
+section:nth-child(2) {
+    margin-top: 145px;
+}
+
+section:nth-child(1) a[role="button"], section:nth-child(1) .card {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+

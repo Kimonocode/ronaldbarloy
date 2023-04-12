@@ -1,0 +1,64 @@
+.card {
+    background-color: $bg-surface;
+}
+
+.work-card {
+    position: relative;
+    max-width: 585px;
+}
+
+.work-card .card-description {
+    background-color: #202430c9;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-rows: auto repeat(3);
+    opacity: 0;
+    transition-duration: .3s;
+    h4, p {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+.work-card:hover .card-description {
+    opacity: 1;
+}
+
+section:nth-child(1) .card {
+    width: 240px;
+    height: 240px;
+    position: relative;
+    margin-bottom: 60px;
+    margin-top: 30px;
+    z-index: 10;
+
+    .card-picture {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background-color: $bg-surface;
+    }
+
+    &::after {
+        display: block;
+        position: absolute;
+        content:"";
+        width: 100%;
+        height: 100%;
+        border: 1px solid $yellow;
+        transform: translate(16px, 16px);
+    }
+
+    .card-picture, &::after {
+        border-radius: 6px;
+    }
+
+
+}
