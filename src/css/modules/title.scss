@@ -1,0 +1,28 @@
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title span {
+    display: block;
+    font-size: 0.75em;
+    margin-right: 13px;
+}
+
+.title:nth-child(1) span {
+    color: $yellow;
+}
+
+.title:nth-child(2) span {
+    color: $orange;
+}
+
+.title:nth-child(1)::after {
+    content: '';
+    display: block;
+    width: 20%;
+    height: 1px;
+    background-color: $text-muted;
+    color: transparent;
+    margin-left: 13px;
+}

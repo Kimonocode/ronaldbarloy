@@ -17,25 +17,75 @@
 
 .iland img {
     position: absolute;
-    top: 0;
+    top: -80px;
     right: -10px;
     overflow-x:hidden;
 }
 
 .iland-left img {
+    top: 0;
     left: -10px;
 }
 
 section:nth-child(1) {
-    margin-top: 190px;
+    margin-top: 200px;
 }
 
 section:nth-child(2) {
-    margin-top: 145px;
+    max-width: 1000px;
+    margin: 145px auto;
 }
 
 section:nth-child(1) a[role="button"], section:nth-child(1) .card {
     margin-left: 50%;
     transform: translateX(-50%);
+}
+
+@media screen and (min-width: 1280px) {
+    .iland-right {
+        display: none;
+    }
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    section:nth-child(1) .container section {
+        max-width: 500px;
+    }
+
+    section:nth-child(1) .wrapper {
+        align-items: flex-end;
+    }
+
+    section:nth-child(2) .wrapper:nth-child(3){
+        flex-direction: row-reverse;
+    }
+
+    section:nth-child(2) .card-description {
+        top: 50%;
+        transform: translate(100%, -50%);
+    }
+
+    section:nth-child(2) .wrapper:nth-child(3) .card-description{
+        transform: translate(0, -50%);
+    }
+
+    section:nth-child(2) .wrapper:nth-child(2) .card-description{
+        transform: translate(100%, 0);
+    }
+
+    .card-description .card-title {
+        position: absolute;
+        right:0;
+        top: -60px;
+    }
+
+    section:nth-child(2) .wrapper:nth-child(3) .card-description .card-title {
+        left:-20px;
+    }
+
 }
 

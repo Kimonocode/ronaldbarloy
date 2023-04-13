@@ -1,0 +1,63 @@
+.topbar button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+}
+
+.topbar button span {
+    content: '';
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 24px;
+    height: 2px;
+    border: none;
+    background-color: $yellow;
+    border-radius: 10px;
+}
+
+.topbar button span::after, .topbar button span::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    display: block;
+    height: 2px;
+    border: none;
+    background-color: $yellow;
+    border-radius: 10px;
+}
+
+.topbar button span::after{
+    width: 30px;
+    transform: translateY(-8px);
+}
+
+
+.topbar button span::before{
+    transform: translateY(8px);
+    width: 18px;
+}
+
+
+menu {
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    right: -100%;
+    top: 0;
+    bottom: 0;
+    background-color: $bg-dark;
+    z-index: 12;
+}
+
+.menu-item {
+    margin-bottom: 10px;
+}
+
+.menu-item a {
+    color: $text;
+}

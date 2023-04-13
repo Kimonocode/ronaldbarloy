@@ -4,7 +4,6 @@
 
 .work-card {
     position: relative;
-    max-width: 585px;
 }
 
 .work-card .card-description {
@@ -24,6 +23,12 @@
         width: 90%;
         margin: auto;
     }
+}
+
+.work-card .description-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .work-card:hover .card-description {
@@ -59,6 +64,39 @@ section:nth-child(1) .card {
     .card-picture, &::after {
         border-radius: 6px;
     }
-
-
 }
+
+@media screen and (min-width: 1280px) {
+    section:nth-child(1) .card {
+        width: 340px;
+        height: 450px;
+    }
+
+    section:nth-child(2) .card {
+        background-color: $bg-dark;
+    }
+
+    .work-card {
+        margin-bottom: 80px;
+    }
+
+    .work-card .card-description {
+        width: 490px;
+        display: block;
+        height: max-content;
+        opacity: 1;
+        background-color: $bg-dark;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .work-card img {
+        width: 590px;
+        height: 370px;
+    }
+
+    .work-card img, .card-description {
+        border-radius: 16px;
+    }
+}
+
+

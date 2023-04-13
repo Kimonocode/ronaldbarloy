@@ -1,0 +1,21 @@
+.hero {
+    margin-top: 100px;
+}
+
+.hero p:first-of-type {
+    color: $yellow;
+}
+
+.hero h2 {
+    opacity: 0.67;
+}
+
+.hero-right {
+    display: none;
+}
+
+@media screen and (min-width: 1280px ) {
+    .hero-right{
+        display: block;
+    }  
+} 

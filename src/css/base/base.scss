@@ -40,6 +40,7 @@ h3:nth-child(1){
 
 p {
     line-height: 1.8;
+    color: $text-muted;
 }
 
 p , button, a[role="button"]{
@@ -62,3 +63,20 @@ a, a:visited, a:focus {
     height: auto;
 }
 
+@media screen and (min-width: 1280px) {
+    h1 {
+        font-size: 5em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    .title {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}

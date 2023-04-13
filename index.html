@@ -13,7 +13,7 @@
     <header>
       <div class="topbar">
         <div class="container">
-          <button id="burger">menu</button>
+          <button id="burger"><span></span></button>
           <menu>
             <ul>
               <li class="menu-item"><a href="">À-propos</a></li>
@@ -26,15 +26,15 @@
         </div>
       </div>
       <div class="hero">
-        <div class="container">
+        <div class="container wrapper">
           <div class="hero hero-left">
-            <p>Hello, je m'apelle</p>
+            <p>Hello, je m'appelle</p>
             <h1>Ronald Barloy.</h1>
-            <h2>Je crée des choses pour le web</h2>
-            <a class="btn btn-primary" role="button" href="#">Lire plus</a>
+            <h2>Je crée des choses<br>pour le web</h2>
+            <p>(J'adore ça)</p>
           </div>
           <div class="hero hero-right">
-
+            <img id="heroBanner" src="" alt="">
           </div>
         </div>
         <div id="mobileIland1" class="iland mobile-iland iland-right">
@@ -44,21 +44,28 @@
     </header>
     <main>
       <section id="about">
-        <div class="container">
-          <h3><span>01</span>À-propos de moi</h3>
-          <p>Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web
+        <div class="container wrapper">
+          <section>
+            <h3 class="title"><span>01</span>À-propos de moi</h3>
+            <p>Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web
             development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking
-            together a custom reblog button taught me a lot about HTML & CSS!</p>
-          <p>Hello! My name is Ronald and I enjoy creating things that live on the internet. My interest in web
-            development started back.</p>
-          <p>Hello! My name is Ronald and I enjoy creating things that live on the internet. My interest in web
-            development started back.</p>
-          <div class="card">
-            <div class="card-picture">
-
+            together a custom reblog button taught me a lot about HTML & CSS!
+            </p>
+            <p>Hello! My name is Ronald and I enjoy creating things that live on the internet. My interest in web
+            development started back.
+            </p>
+            <p>Hello! My name is Ronald and I enjoy creating things that live on the internet. My interest in web
+            development started back.
+            </p>
+          </section>
+          <aside>
+            <div class="card">
+              <div class="card-picture">
+  
+              </div>
             </div>
-          </div>
-          <a class="btn btn-yellow" role="button" href="#">En savoir plus</a>
+            <a class="btn btn-yellow" role="button" href="#">En savoir plus</a>
+          </aside>
         </div>
         <div id="mobileIland2" class="iland mobile-iland iland-left">
           <img id="mobileIland2Img" src="" alt="">
@@ -66,39 +73,51 @@
       </section>
       <section id="works">
         <div class="container">
-          <h3><span>03</span>Des choses que j'ai faites</h3>
+          <h3 class="title"><span>03</span>Des choses que j'ai faites</h3>
         </div>
-        <div class="card work-card">
+        <div class="card work-card wrapper">
           <div class="card-description">
-            <h4 class="card-title">safepass</h4>
-            <p>Hello! My name is Ronald and I enjoy creating things that live on the internet. My interest in web
-              development started back.</p>
-            <p class="card-technologies">Electron / Typescript</p>
+            <div class="description-container">
+              <div class="card-title">
+                <h4 >safepass</h4>
+              </div>
+              <p>Hello! My name is Ronald and I enjoy creating things that live on the internet. My interest in web
+                development started back.</p>
+              <p class="card-technologies">Electron / Typescript</p>
+            </div>
           </div>
           <div>
             <img class="picture" id="workItem1" src="" alt="">
           </div>
         </div>
-        <div class="card work-card">
+        <div class="card work-card wrapper">
           <div class="card-description">
-            <h4 class="card-title">safepass</h4>
-            <p>Hello! My name is Ronald and I enjoy creating things that live on the internet. My interest in web
-              development started back.</p>
-            <p>Hello! My name is Ronald and I enjoy creating things that live on the internet. My interest </p>
-            <p class="card-technologies">Electron / Typescript</p>
+            <div class="description-container">
+              <div class="card-title">
+                <h4>safepass</h4>
+              </div>
+              <p>Hello! My name is Ronald and I enjoy creating things that live on the internet. My interest in web
+                development started back.</p>
+              <p>Hello! My name is Ronald and I enjoy creating things that live on the internet. My interest </p>
+              <p class="card-technologies">Electron / Typescript</p>
+            </div>
           </div>
           <div>
             <img class="picture" id="workItem2" src="" alt="">
           </div>
         </div>
-        <div class="card work-card">
+        <div class="card work-card wrapper">
           <div class="card-description">
-            <h4 class="card-title">safepass</h4>
-            <p>Hello! My name is Ronald and I enjoy creating things that live on the internet. My interest in web
-              development started back.</p>
-            <p>Hello! My name is Ronald and I enjoy creating things that live on the internet. My interest </p>
-            <p>Hello! My name is Ronald and I enjoy creating things that live on the internet. My interest </p>
-            <p class="card-technologies">Electron / Typescript</p>
+            <div class="description-container">
+              <div class="card-title">
+                <h4>safepass</h4>
+              </div>
+              <p>Hello! My name is Ronald and I enjoy creating things that live on the internet. My interest in web
+                development started back.</p>
+              <p>Hello! My name is Ronald and I enjoy creating things that live on the internet. My interest </p>
+              <p>Hello! My name is Ronald and I enjoy creating things that live on the internet. My interest </p>
+              <p class="card-technologies">Electron / Typescript</p>
+            </div>
           </div>
           <div>
             <img class="picture" id="workItem3" src="" alt="">
