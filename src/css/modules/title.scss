@@ -26,3 +26,11 @@
     color: transparent;
     margin-left: 13px;
 }
+
+@media  screen and (min-width: 1280px) {
+
+
+    .title:nth-child(1)::after {
+        width: 40%;
+    }
+}

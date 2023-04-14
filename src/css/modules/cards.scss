@@ -97,6 +97,16 @@ section:nth-child(1) .card {
     .work-card img, .card-description {
         border-radius: 16px;
     }
+
+    section:nth-child(1) .card::after {    
+        transform: translate(30px, -30px);
+    }
+
+    section:nth-child(1) a[role="button"] {    
+        position: absolute;
+        left: -107px;
+        bottom: 58px;
+    }
 }
 
 
